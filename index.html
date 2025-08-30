@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairuz's Portofolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-[30px]">
+    <header class="main-header p-[10px] pr-[50px]">
+       <img class="logo" src="IMG_4632.JPG" alt="logo"></img>
+
+       <nav class="nav-menu">
+        <a href="#home-page" class=" m-[10px] p-[5px]">Home</a>
+        <a href="#myProfile" class="  m-[10px] p-[5px]">My Profile</a>
+        <a href="#porto" class="  m-[10px] p-[5px]">Portofolio</a>
+        <a href="#message-section" class="  m-[10px] p-[5px]">Message Us</a>
+       </nav>
+    </header>
+
+    <main>
+        <section id="home-page" class=" relative min-h-[500px]">
+            <div id="slider" class="absolute inset-0 bg-cover bg-center rounded-lg mt-5"></div>
+            <div class="absolute inset-0 bg-black/50"></div>
+
+            <header class="relative z-10 flex items-center justify-center h-[500px]">
+            <h2 class="text-center text-[45px] font-bold text-white drop-shadow-lg">
+                <span id="username"></span>, Welcome To My Portofolio!
+            </h2>
+            </header>
+
+
+        </section>
+        <section id="myProfile" class="p-[10px] min-h-[400px]">
+        <div class="flex flex-row items-center gap-6">
+            <!-- Foto Profil -->
+            <img src="4.png" alt="Profile Picture">
+
+            <!-- Teks -->
+            <div>
+            <h2 class="text-white font-bold text-3xl mb-2">Fairuz Zahira</h2>
+            <p class="text-white max-w-md text-justify">
+                Hello! Saya Fairuz Zahira, Saya adalah Mahasiswi tingkat akhir Teknik Infotmatika di Universitas Airlangga dengan passion di web designer dan web developer. Berhasil mengelola berbagai projek kampus dengan berbagai ide mulai dari mengembangkan web, mendesain web, membuat tampilan aplikasi mobile, dan mengelola database yang bersangkutan.
+            </p>
+            </div>
+
+        </div>
+        </section>
+        
+        <section id="porto" class="p-[40px] min-h-[500px] text-white bg-[#4f4057]">
+            <h2 class="text-3xl font-bold mb-8 text-center">My Project</h2>
+
+            <!-- Project 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
+                <!-- Foto -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                <img src="gacoanMm.png" alt="Project 1" class="w-150 shadow-lg">
+                </div>
+
+                <!-- Deskripsi -->
+                <div class="w-full md:w-1/2 space-y-4 text-justify">
+                <h3 class="text-2xl font-semibold">Aplikasi Pemesanan Gacoan</h3>
+                <p><span class="font-bold">Deskripsi:</span> Aplikasi ini dirancang sebagai layanan pesan antar makanan berbasis mobile untuk produk Gacoan. Dikembangkan menggunakan Dart (Flutter) untuk frontend, PHP untuk backend, dan Postman untuk pengujian serta integrasi API. Untuk perancangan antarmuka dilakukan dengan Figma</p>
+                <p><span class="font-bold">Tantangan:</span> Tidak ada sistem pembayaran asli atau data transaksi riil yang diintegrasikan, sehingga pengujian dilakukan secara simulasi.</p>
+                <p><span class="font-bold">Solusi:</span> Menggunakan Postman untuk menguji setiap endpoint API sebelum diintegrasikan ke aplikasi, sehingga dapat meminimalisir bug saat penggabungan frontend dan backend.</p>
+                <p><span class="font-bold">Hasil:</span> Aplikasi berhasil dijalankan secara lokal dengan fitur utama seperti pemilihan menu, keranjang belanja, dan simulasi konfirmasi pesanan. Aplikasi juga berhasil dijalankan pada perangkat Android melalui proses build dan deployment langsung (APK), meskipun belum dirilis di Play Store.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="flex flex-col md:flex-row items-center gap-10 mb-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                <img src="breath.png" alt="Project 2" class="w-150 shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4 text-justify">
+                <h3 class="text-2xl font-semibold">Website Pendeteksi Penyakit Asma "BreathEase"</h3>
+                <p><span class="font-bold">Deskripsi:</span> Situs web sistem pakar yang dirancang untuk membantu pengguna dalam mendeteksi gejala asma berdasarkan input gejala yang dirasakan.  Sistem ini dikembangkan menggunakan Flask sebagai backend dan tools frontend seperti HTML, CSS, dan JavaScript, dengan desain antarmuka yang dibuat agar mudah diakses oleh pengguna awam.</p>
+                <p><span class="font-bold">Tantangan:</span>Dalam pengembangan sistem pakar, idealnya diperlukan konsultasi langsung dengan dokter atau pakar kesehatan untuk merancang logika diagnosis yang akurat.</p>
+                <p><span class="font-bold">Solusi:</span> Mengatasi keterbatasan tersebut dengan menggunakan referensi dari sumber medis tepercaya yaitu dari WHO.</p>
+                <p><span class="font-bold">Hasil:</span> Sistem mampu memberikan hasil deteksi gejala asma yang logis berdasarkan input pengguna.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        
+        <section id="message-section" class="mt-10 flex gap-10 text-white">
+            <form id="userForm" class="flex flex-col gap-4">
+                <label for="name" class="block">Name:</label>
+                <input type="text" id="name" name="name" class="w-150 p-2 mb-4 bg-[#4f4057] border border-white-600 rounded">
+
+                <label for="email" class="block">Email:</label>
+                <input type="email" id="email" name="email" class="w-150 p-2 mb-4 bg-[#4f4057] border border-white-600 rounded">
+
+                <label for="userMessage" class="block">Message:</label>
+                <textarea id="userMessage" name="message" rows="4" class="w-150 p-2 mb-4 bg-[#4f4057] border border-white-600 rounded"></textarea>
+
+                <button type="submit" class="w-20 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send</button>
+            </form>
+
+            <!-- Hasil -->
+            <div class="w-1/2 bg-[#4f4057] p-4 rounded">
+                <h2 class="text-2xl font-bold mb-4"></h2>
+                <div id="result" class="space-y-4"></div>
+            </div>
+        </section>
+
+
+    </main>
+    
+    
+    <footer class="text-center p-[10px] text-white"> 
+        &copy; 2025 Fairuz's Portofolio. All rights reserved.</footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    background-color: darkgray;
+    border-radius: 50%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    /* background-color: lightblue; */
+    border-radius: 5px;
+}
+
+#slider {
+  transition: background-image 1s ease-in-out;
+}
+
+#myProfile img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
